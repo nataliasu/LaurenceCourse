@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+body {
+    font-family: 'Alegreya', serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+#myitems {
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+}
+
+#myitems li {
+    width: 100%;
+}
+
+.aboutpage input[type=text] {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: darkgrey;
+    color: white;
+
+}
+
+h2 {
+    font-size: 1.5em;
+    line-height: 0.9em;
+    font-family: 'Cinzel', serif;
+
+}
+
+#wrapper {
+    max-width: 1180px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    min-height: 50px;
+    padding: 25px;
+    clear: both;
+}
+
+#header {
+    background-color: #ddd;
+    border-color: black;
+    float: left;
+    width: 100%;
+    margin: 0 0 40px 0;
+    padding-top: 10px;
+}
+
+
+#header div {
+    padding: 10px;
+}
+
+#header h1 {
+    padding: 0;
+    margin: 0;
+    line-height: 45px;
+
+}
+
+.brdone {}
+
+nav {
+    padding: 10px 0 0;
+    margin-bottom: 10px;
+    margin-right: 1px;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    padding: 5px 10px;
+    background-color: #ddd;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.selected,
+nav a:hover {
+    color: white;
+    background-color: darkgray;
+}
+
+@media screen and (min-width: 480px) {
+    #primary {
+        width: 60%;
+        background-color: white;
+        float: left;
+    }
+
+    #secondary {
+        width: 35%;
+        background-color: darkgrey;
+        float: right;
+        padding: 5px;
+    }
+
+    #header nav {
+        text-align: center;
+        margin-bottom: 15px;
+        background-color: black;
+        line-height: 60px;
+    }
+
+    nav a {
+        padding: 15px 10px;
+    }
+
+    #myitems li {
+        width: 40%;
+        float: left;
+        margin: 5%;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    #wrapper {
+        margin: 0 auto;
+        padding: 0 4%;
+    }
+
+    #header nav {
+        width: 45%;
+        float: right;
+        text-align: right;
+    }
+
+    #header div {
+        width: 45%;
+        float: left;
+    }
+
+    #header {}
+
+
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv-"X UA Compatible" content-"YE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="suszi">
+    <title>Website Single Page</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header id="header" class="brdone">
+        <div class="brdone">
+            <h1>Company Info</h1>
+            <small>this is the greatest company</small>
+        </div>
+        <nav class="brdone">
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="wrapper">
+        <section id="primary" class="brdone">
+            <h2>Products</h2>
+            <ul id="myitems">
+                <li><img src="https://placehold.it/350x150"></li>
+                <li><img src="https://placehold.it/850x150"></li>
+                <li><img src="https://placehold.it/550x150"></li>
+                <li><img src="https://placehold.it/350x150"></li>
+                <li><img src="https://placehold.it/350x150"></li>
+            </ul>
+
+        </section>
+        <section id="secondary" class="brdone">
+            <h2>Sub Menu</h2>
+
+            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+        </section>
+        <footer class="brdone"> &copy; company name address contact us for more info</footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    $(function () {
+    var pagePath = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
+    console.log(pagePath);
+    $('#header ul li a[href^="' + pagePath + '"]').addClass('selected');
+
+})
+    </script>
+
+</body>
+
+</html>
